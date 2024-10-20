@@ -60,19 +60,5 @@
         <p class="last-smile">:)</p>
       </div>
     </div>
-
-    <script>
-      // Fetch customization data from customize.json
-      fetch('customize.json')
-        .then(response => response.json())
-        .then(data => {
-          // Apply the customization to the HTML
-          document.getElementById('name').innerText = data.name;
-          document.getElementById('greetingText').innerText = data.greetingText;
-          document.getElementById('wishText').innerText = data.wishText;
-          document.getElementById('imagePath').src = data.imagePath;
-        })
-        .catch(error => console.error('Error loading customization:', error));
-    </script>
   </body>
 </html>
